@@ -39,7 +39,6 @@ class OverviewViewModel : ViewModel() {
     init {
         getMarsPhotos()
     }
-
     /**
      * Bloque try catch que nos permite mostrar el error en vez de cerrar la app
      */
@@ -51,7 +50,6 @@ class OverviewViewModel : ViewModel() {
             } catch(e: Exception){
                 _status.value = "Failure: ${e.message}"
             }
-
         }
     }
 }
